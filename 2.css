@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+}
+a {
+    text-decoration: none;
+}
+
+/* nav start */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(194, 189, 190);
+    display: flex;
+    justify-content: space-between;
+}
+nav>h2>a {
+    padding-left: 40px;
+    font-size: 25px;
+    color: black;
+}
+
+.menu {
+    margin-right: 4em;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu>li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px 20px;
+    position: relative;
+}
+.menu>li>a {
+    color: black;
+    font-size: 24px;
+    transition: .5s;
+}
+.menu>li>a:hover {
+    color: dodgerblue;
+    transition: .5s;
+}
+.menu>li::after {
+    content: '';
+    height: 3.5px;
+    width: 0;
+    background: dodgerblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menu>li:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1025px) {
+    nav>ul {
+        display: none;
+    }
+}
+/* nav end */
+
+/* home start */
+.home {
+    text-align: center;
+    padding: 15em 0em 12em 0em;
+}
+.home>div {
+    text-align: center;
+}
+.home h3 {
+    font-size: 30px;
+}
+.home h1 {
+    font-size: 50px;
+}
+.home h2 {
+    font-size: 30px;
+}
+/* home end */
+
+/* about me start */
+.aboutme {
+    margin-bottom: 3em;
+    padding: 3em 0em;
+}
+.aboutme>h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.aboutme>h1>i {
+    font-size: 42px;
+}
+.aboutme>div {
+    display: grid;
+    grid-template-columns: [one] 40% [two] 60%;
+}
+.aboutme>div>div {
+    margin-left: 100px;
+}
+.aboutme_img>img {
+    margin-left: 5em;
+    width: 20em;
+    border-radius: 15px;
+}
+.aboutme_details {
+    padding-left: -20em;
+}
+.aboutme_details>h2 {
+    font-weight: bolder;
+}
+.aboutme_details>p {
+    font-weight: bold;
+}
+.aboutme_details>h4 {
+    padding-right: 10em;
+    font-size: 15px;
+    font-weight: lighter;
+    color: black;
+}
+.aboutme_contact {
+    display: grid;
+    grid-template-columns: [one] 30% [two] 50%;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.aboutme_contact>p {
+    color: rgb(45, 34, 242);
+}
+.aboutme_contact>p>span {
+    color: black;
+    margin-left: 5px;
+}
+.aboutme_details>a {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: 20px solid rgb(90, 4, 70);
+    background-color: rgb(90, 4, 70);
+    border-radius: 50px;
+    transition: .5s;
+}
+.aboutme_details>a>i {
+    font-size: 25px;
+}
+.aboutme_details>a:hover {
+    color: black;
+    transition: .5s;
+}
+/* about me end */
+
+/* education start */
+.education {
+    padding: 25px;
+    background-color: #ca65ad;
+    color: white;
+}
+.education>h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.education>ul {
+    margin-left: 15em;
+    margin-right: 10em;
+    padding: 20px 40px;
+    background-color: #7f1a67d7;
+    border-radius: 10px;
+}
+/* education end */
+
+/* footer start */
+footer {
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    color: rgb(250, 247, 247);
+    padding-top: 30px;
+    padding-bottom: 1px;
+}
+.footer_Content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 8em;
+}
+.footer_Content>div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.footer_About>p {
+    margin-right: 5em;
+    color: rgb(173, 169, 169);
+    font-size: 19px;
+}
+.footer_Links>a {
+    font-weight: bold;
+    font-size: 19px;
+    padding: 8px 0px;
+    color: rgb(173, 169, 169);
+    transition: .5s;
+}
+.footer_Links>a:hover {
+    color: rgb(11, 87, 163);
+    transition: .5s;
+}
+footer>p {
+    font-size: 19px;
+    text-align: center;
+    padding-top: 30px;
+}
+footer>p>i {
+    color: red;
+}
+footer>p>a {
+    color: blueviolet;
+    transition: .5s;
+}
+footer>p>a:hover {
+    color: white;
+    transition: .5s;
+}
+/* footer end */
